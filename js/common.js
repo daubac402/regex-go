@@ -15,13 +15,16 @@ $(document).ready(function() {
 
     $('.ui.dropdown').dropdown({
         onChange: function(value, text, $selectedItem) {
-            $.cookie('lang', $selectedItem.context.childNodes[0].getAttribute("value"),
+            before_value = $.cookie('lang');
+            new_value = $selectedItem.context.childNodes[0].getAttribute("value");
+            $.cookie('lang', new_value,
             {
                 expires: 90,  // expire: 30 days
                 path: '/'     // cover: all pages
             });
-            console.log(value);
-            location.reload();
+            if (before_value != new_value) {
+                location.reload();
+            }
         },
     });
 });

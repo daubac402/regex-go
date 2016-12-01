@@ -10290,7 +10290,7 @@ Docs.NONPRINTING_CHARS = {0: "NULL",1: "SOH",2: "STX",3: "ETX",4: "EOT",5: "ENQ"
         return c.type = !d && a.CHAR_TYPES[e] || "char", d || "/" != e || (c.err = "fwdslash"), "char" == c.type ? c.code = e.charCodeAt(0) : "bof" == c.type || "eof" == c.type ? c.clss = "anchor" : "dot" == c.type && (c.clss = "charclass"), c
     }, b.parseGroup = function(a, b) {
         b.clss = "group";
-        var c = a.substr(b.i + 1).match(/^\?(?::|<?[!=])/), d = c && c[0];
+        var c = a.substr(b.i + 1).match(/^\?(?::|(<)?[!=])/), d = c && c[0];
         return "?:" == d ? (b.l = 3, b.type = "noncapgroup") : d ? (b.behind = "<" == d[1], b.negative = "!" == d[1 + b.behind], b.clss = "lookaround", b.type = (b.negative ? "neg" : "pos") + "look" + (b.behind ? "behind" : "ahead"), b.l = d.length + 1, b.behind && (b.err = "lookbehind")) : (b.type = "group", b.capture = !0), b
     }, b.parseEsc = function(b, c, d, e, f) {
         var g, h, i = c.i, j = c.js, k = b.substr(i + 1), l = k[0];

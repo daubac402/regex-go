@@ -2,7 +2,7 @@
 <!-- <html lang="en"> -->
 <html lang="ja" ng-app="RegexApp">
 <?php
-    $child_site = '/regex-go'; // for test
+    $child_site = ''; // for test
     require_once $_SERVER['DOCUMENT_ROOT'] . $child_site . '/include/IncludeBackends.php';
 
     $locale = 'ja';
@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Test your Javascript and PCRE regular expressions online.">
-        <meta name="keywords" content="regexpal, regex101, regex test,regex tester, regular expression, regex editor,online,regular,expression,tester,regexp,test,regex,validator, PCRE, PHP, Perl, javascript">
+        <meta name="keywords" content="RegexGo, regex101, regex test,regex tester, regular expression, regex editor,online,regular,expression,tester,regexp,test,regex,validator, PCRE, PHP, Perl, javascript">
         <meta name="author" content="daubac403@gmail.com">
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
         <link href="css/font-awesome.css" rel="stylesheet">
@@ -48,7 +48,7 @@
         <script src="js/common.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">
         <script src="semantic_UI/semantic.min.js"></script>
-
+        <?php require_once $_SERVER['DOCUMENT_ROOT'] . $child_site . '/js/scripts.php'; ?>
 
         <style>
         ins {
@@ -84,13 +84,10 @@
         <div id="main" class="container-fluid sidebar-show" style="overflow:visible;">
             <div class="row">
                 <div id="sidebar-left" class="col-xs-2 col-sm-2">
+                    abc
                 </div>
                 <!--Start Content-->
                 <div id="content" class="col-xs-12 col-sm-10" style="min-height:1000px;padding-left:0px; padding-right:0px;">
-                    <!-- <script src="js/scripts_jp.js?v=20161125"></script> -->
-                    <?php 
-                        require_once $_SERVER['DOCUMENT_ROOT'] . $child_site . '/js/scripts.php';
-                    ?>
                     <link rel="stylesheet" href="css/regexrf934.css?v=20161125">
                     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
                     <div style="display:none;">
@@ -99,7 +96,7 @@
                             <h1 class="regexr-text">Regex Pal</h1><span class="version regexr-text">(c) daubac403@gmail.com</span>
                         </div>
                         <div class="lib hidden" id="libview">
-                            <div class="content"><b>RegexPal is a tool to <b>learn</b>, <b>build</b>, & <b>test</b> Regular Expressions (RegEx / RegExp).</b>
+                            <div class="content"><b>RegexGo is a tool to <b>learn</b>, <b>build</b>, & <b>test</b> Regular Expressions (RegEx / RegExp).</b>
                                 <hr>
                                 <ul>
                                     <li>Results update in <b>real-time</b> as you type.</li>
@@ -244,10 +241,6 @@
                         height: 100%;
                     }
                     
-                    .col-md-8 {
-                        height: 100%;
-                    }
-                    
                     .box {
                         height: 100%;
                     }
@@ -286,7 +279,7 @@
                     </script>
                     <div class="row secondrow">
                         <div class="col-md-8">
-                            <div class="ui floating dropdown labeled search icon button" style="float:right;">
+                            <div class="ui floating dropdown labeled icon button" style="float:right;">
                                 <i class="world icon"></i>
                                 <span class="text">Language</span>
                                 <div class="menu">
@@ -295,6 +288,7 @@
                                     <div class="item"><i class="vn flag" value="vi"></i>Tiếng Việt</div>
                                 </div>
                             </div>
+                            <div class="clearfix"></div>
                             <div class="box">
                                 <div class="box-content">
                                     <div class="doc subst-disabled" id="docview">
@@ -305,7 +299,7 @@
                                             </ul>
                                         </h5>
                                         </div>
-                                        <div class="editor expr">
+                                        <div class="editor expr" style="line-height:16px">
                                             <div class="results"></div>
                                         </div>
                                         
@@ -385,23 +379,26 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-4">
+                        abc
+                        </div>
                         <img class="hidden spinner" src="data:image/gif;base64,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"> <img class="hidden spinner white" src="data:image/gif;base64,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">
                         <div class="not-supported-mobile hidden">
                             <div class="top">
                                 <h1 class="icon regexr-logo">&#xE600;</h1>
-                                <h1 class="regexr-text">RegexPal</h1><span class="version regexr-text"></span>
+                                <h1 class="regexr-text">RegexGo</h1><span class="version regexr-text"></span>
                             </div>
                             <div class="content">
-                                <p>RegexPal isn't optimized for mobile devices yet. You can still take a look, but it might be a bit quirky.</p><a id="closeOverlay"><b>&gt;</b> Okay!</a>
+                                <p>RegexGo isn't optimized for mobile devices yet. You can still take a look, but it might be a bit quirky.</p><a id="closeOverlay"><b>&gt;</b> Okay!</a>
                             </div>
                         </div>
                         <div class="not-supported hidden">
                             <div class="top">
                                 <h1 class="icon regexr-logo">&#xE600;</h1>
-                                <h1 class="regexr-text">RegexPal</h1><span class="version regexr-text"></span>
+                                <h1 class="regexr-text">RegexGo</h1><span class="version regexr-text"></span>
                             </div>
                             <div class="content">
-                                <p>RegexPal requires a modern browser. Please update your browser to the latest version and try again.</p>
+                                <p>RegexGo requires a modern browser. Please update your browser to the latest version and try again.</p>
                                 <p class="flash hidden"></p>
                             </div>
                         </div>

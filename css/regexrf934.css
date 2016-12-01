@@ -515,7 +515,7 @@ table.cheatsheet th {
 .list .item.selected .community-list .rating-list,
 .tag-list-container .tag-list .item.selected .community-list .rating-list,
 .community-list .item.selected .rating-list {
-    background: #00598c;
+    background: #a7d6ff;
     color: white
 }
 
@@ -678,7 +678,7 @@ textarea {
 
 a {
     text-decoration: none;
-    color: #00598c;
+    color: #a7d6ff;
     cursor: pointer
 }
 
@@ -789,7 +789,7 @@ a:hover {
 .menu.share input[type="button"],
 .menu.share [type="button"]#copyTxt {
     width: 40%;
-    background: #00598c;
+    background: #a7d6ff;
     margin-top: .5em;
     font-weight: bold;
     font-family: "Cabin", sans-serif;
@@ -904,7 +904,7 @@ a:hover {
     display: inline-block;
     vertical-align: middle;
     top: -0.25rem;
-    color: #00598c
+    color: #a7d6ff
 }
 
 .top h1.icon {
@@ -951,7 +951,7 @@ a:hover {
 .doc {
     position: relative;
     width: 100%;
-    height: calc(100% - 90px);
+    height: calc(100% - 200px);
     top: 0;
     float: right;
 }
@@ -992,7 +992,7 @@ a:hover {
 }
 
 .title.expr {
-    background: #00598c
+    background: #a7d6ff
 }
 
 .editor.expr {
@@ -1237,7 +1237,7 @@ a:hover {
 
 .lib .content em {
     font-style: normal;
-    background: #00598c;
+    background: #a7d6ff;
     margin-left: 1px;
     color: black
 }
@@ -1620,4 +1620,8 @@ table.cheatsheet td:first-child {
 
 .CodeMirror-focused .CodeMirror-selected {
     background: rgba(140, 150, 255, 0.8)
+}
+
+#docview > div.editor.source > div.CodeMirror.cm-s-default.CodeMirror-wrap > div.CodeMirror-scroll > div.CodeMirror-sizer {
+    min-height: 200px!important;
 }
