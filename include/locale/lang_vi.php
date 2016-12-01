@@ -1,0 +1,35 @@
+<?php
+class CurrentLanguage
+{
+	const LANG = [
+		'Regular Expression' => 'Biểu Thức Chính Quy'
+		,'Test String' => 'Chuỗi Test'
+		,'Expression Flags' => 'Cờ'
+		,'ignore case' => 'ko phân biệt hoa thường'
+		,'global' => 'global'
+		,'multiline' => 'đa dòng'
+		,'ERROR: ' => 'LỖI: '
+		,'flags' => 'cờ'
+		,'no match' => 'không khớp'
+		,'match' => 'khớp'
+		,'es' => ''
+		,'infinite' => 'khớp vô hạn'
+		,'The expression can match 0 characters, and therefore matches infinitely.' => 'Biểu thức hiện tại có thể khớp với chuỗi test rỗng và do đó khớp với vô hạn các chuỗi test đầu vào.'
+		,'open' => 'Mở Biểu Thức'
+		,'Indicates the start of a regular expression.' => 'Ký hiệu bắt đầu Biểu thức chính quy.'
+		,'close' => 'Đóng Biểu Thức'
+		,'Indicates the end of a regular expression and the start of expression flags.' => 'Ký hiệu kết thúc Biểu thức chính quy và cũng là Ký hiệu bắt đầu của cờ.'
+		,'global search' => 'Tìm kiếm trên global'
+		,'Retain the index of the last match, allowing iterative searches.' => 'Giữ lại chỉ mục index của phần khớp cuối cùng, cho phép việc tìm kiếm lặp lại.'
+		,'Retain the index of the last match, allowing subsequent searches to start from the end of the previous match.<p>Without the global flag, subsequent searches will return the same match.</p><hr/>RegExr only searches for a single match when the global flag is disabled to avoid infinite match errors.' => 'Giữ lại chỉ mục index của phần khớp cuối cùng, cho phép tìm kiếm tuần tự bắt đầu từ vị trí cuối cùng của xâu gần nhất khớp với Biểu thức chính quy trước đó.<p>Nếu không bật cờ global, Tìm kiếm tuần tự sẽ trả về các khớp giống nhau.</p><hr/>Biểu thức chính quy chỉ tìm kiếm khớp đơn khi tắt cờ global nhằm tránh việc lặp vô hạn.'
+		,'Makes the whole expression case-insensitive.' => 'Bật phân biệt hoa thường cho toàn bộ biểu thức'
+		,'Beginning/end anchors (<b>^</b>/<b>$</b>) will match the start/end of a line.' => 'Bắt đầu/Kết thúc các neo (<b>^</b>/<b>$</b>) sẽ khớp với bắt đầu/kết thúc của một dòng.'
+		,'When the multiline flag is enabled, beginning and end anchors (<code>^</code> and <code>$</code>) will match the start and end of a line, instead of the start and end of the whole string.<p>Note that patterns such as <code>/^[\\s\\S]+$/m</code> may return matches that span multiple lines because the anchors will match the start/end of <b>any</b> line.</p>' => 'Khi cờ Đa dòng được bật, bắt đầu và kết thúc các neo (<code>^</code> and <code>$</code>) sẽ khớp với bắt đầu/kết thúc của một dòng, the vì khớp với bắt đầu/kết thúc của cả chuỗi test.<p>Chú ý: Các mẫu như <code>/^[\\s\\S]+$/m</code> có thể trả về các khớp các dòng vì các neo sẽ khớp với đầu/cuối của <b>bất kỳ</b> dòng nào.</p>'
+		,'character' => 'ký tự'
+		,'Matches a {{getChar()}} character (char code {{code}}).' => 'Khớp một ký tự {{getChar()}} (char code {{code}}).'
+		,'beginning' => 'Ký tự bắt đầu chuỗi'
+		,'Matches the beginning of the string, or the beginning of a line if the multiline flag (<code>m</code>) is enabled.' => 'Khớp với ký tự mở chuỗi hoặc đầu dòng nếu như cờ đa dòng (<code>m</code>) được bật.'
+		,'end' => 'Ký tự kết thúc chuỗi'
+		,'Matches the end of the string, or the end of a line if the multiline flag (<code>m</code>) is enabled.' => 'Khớp với ký tự đóng chuỗi hoặc cuối dòng nếu như cờ đa dòng (<code>m</code>) được bật.'
+	];
+}

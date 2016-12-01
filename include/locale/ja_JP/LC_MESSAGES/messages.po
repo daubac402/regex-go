@@ -1,0 +1,99 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"X-Generator: Poedit 1.8.11\n"
+
+msgid "Regular Expression"
+msgstr "正規表現"
+
+msgid "Test String"
+msgstr "文字列"
+
+msgid "Expression Flags"
+msgstr "表現フラグ"
+
+msgid "ignore case"
+msgstr "大文字小文字を無視"
+
+msgid "global"
+msgstr "グローバル"
+
+msgid "multiline"
+msgstr "複数行"
+
+msgid "ERROR: "
+msgstr "エラー："
+
+msgid "flags"
+msgstr "フラグ"
+
+msgid "no match"
+msgstr "一致しません"
+
+msgid "match"
+msgstr "一致"
+
+msgid "es"
+msgstr "&nbsp;"
+
+msgid "infinite"
+msgstr "無限"
+
+msgid "The expression can match 0 characters, and therefore matches infinitely."
+msgstr "式は0文字に一致するため、無限に一致します。"
+
+msgid "open"
+msgstr "オープン"
+
+msgid "Indicates the start of a regular expression."
+msgstr "正規表現の開始を示します。"
+
+msgid "close"
+msgstr "クローズ"
+
+msgid "Indicates the end of a regular expression and the start of expression flags."
+msgstr "正規表現の終了と式の開始フラグを示します。"
+
+msgid "global search"
+msgstr "グローバル検索"
+
+msgid "Retain the index of the last match, allowing iterative searches."
+msgstr "最後の一致のインデックスを保持し、反復検索を許可します。"
+
+msgid "Retain the index of the last match, allowing subsequent searches to start from the end of the previous match.<p>Without the global flag, subsequent searches will return the same match.</p><hr/>RegExr only searches for a single match when the global flag is disabled to avoid infinite match errors."
+msgstr "最後の一致のインデックスを保持します。これにより、前回の一致の最後から検索を開始できます。<p>グローバルフラグがなければ、その後の検索で同じ一致が返されます。</p><hr/>正規表現は、無限の一致エラーを避けるためにグローバルフラグが無効の場合にのみ、1つの一致を検索します。"
+
+msgid "Makes the whole expression case-insensitive."
+msgstr "式全体を大文字と小文字を区別させません。"
+
+msgid "Beginning/end anchors (<b>^</b>/<b>$</b>) will match the start/end of a line."
+msgstr "開始/終了アンカー (<b>^</b>/<b>$</b>) 行の開始/終了と一致します。"
+
+msgid "When the multiline flag is enabled, beginning and end anchors (<code>^</code> and <code>$</code>) will match the start and end of a line, instead of the start and end of the whole string.<p>Note that patterns such as <code>/^[\\s\\S]+$/m</code> may return matches that span multiple lines because the anchors will match the start/end of <b>any</b> line.</p>"
+msgstr "マルチラインフラグが有効な場合、アンカーの開始と終了 (<code>^</code> and <code>$</code>) 文字列全体の開始と終了ではなく、行の開始と終了に一致します。<p>パターンといった <code>/^[\\s\\S]+$/m</code> アンカーが任意の行の開始/終了と一致するため、複数の行にまたがる一致を返すことがあるご了承ください。"
+
+msgid "character"
+msgstr "文字"
+
+msgid "Matches a {{getChar()}} character (char code {{code}})."
+msgstr "文字 {{getChar()}} (charコード {{code}})を一致します。"
+
+msgid "beginning"
+msgstr "始まり"
+
+msgid "Matches the beginning of the string, or the beginning of a line if the multiline flag (<code>m</code>) is enabled."
+msgstr "複数行フラグ (<code>m</code>) が有効な場合は、文字列の先頭または行の先頭に一致します。"
+
+msgid "end"
+msgstr "終わり"
+
+msgid "Matches the end of the string, or the end of a line if the multiline flag (<code>m</code>) is enabled."
+msgstr "複数行フラグ（<code>m</code>）が有効な場合は、文字列の終わりまたは行の終わりに一致します。"

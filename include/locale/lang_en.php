@@ -1,0 +1,35 @@
+<?php
+class CurrentLanguage
+{
+	const LANG = [
+		'Regular Expression' => 'Regular Expression'
+		,'Test String' => 'Test String'
+		,'Expression Flags' => 'Expression Flags'
+		,'ignore case' => 'ignore case'
+		,'global' => 'global'
+		,'multiline' => 'multiline'
+		,'ERROR: ' => 'ERROR: '
+		,'flags' => 'flags'
+		,'no match' => 'no match'
+		,'match' => 'match'
+		,'es' => 'es'
+		,'infinite' => 'infinite'
+		,'The expression can match 0 characters, and therefore matches infinitely.' => 'The expression can match 0 characters, and therefore matches infinitely.'
+		,'open' => 'open'
+		,'Indicates the start of a regular expression.' => 'Indicates the start of a regular expression.'
+		,'close' => 'close'
+		,'Indicates the end of a regular expression and the start of expression flags.' => 'Indicates the end of a regular expression and the start of expression flags.'
+		,'global search' => 'global search'
+		,'Retain the index of the last match, allowing iterative searches.' => 'Retain the index of the last match, allowing iterative searches.'
+		,'Retain the index of the last match, allowing subsequent searches to start from the end of the previous match.<p>Without the global flag, subsequent searches will return the same match.</p><hr/>RegExr only searches for a single match when the global flag is disabled to avoid infinite match errors.' => 'Retain the index of the last match, allowing subsequent searches to start from the end of the previous match.<p>Without the global flag, subsequent searches will return the same match.</p><hr/>RegExr only searches for a single match when the global flag is disabled to avoid infinite match errors.'
+		,'Makes the whole expression case-insensitive.' => 'Makes the whole expression case-insensitive.'
+		,'Beginning/end anchors (<b>^</b>/<b>$</b>) will match the start/end of a line.' => 'Beginning/end anchors (<b>^</b>/<b>$</b>) will match the start/end of a line.'
+		,'When the multiline flag is enabled, beginning and end anchors (<code>^</code> and <code>$</code>) will match the start and end of a line, instead of the start and end of the whole string.<p>Note that patterns such as <code>/^[\\s\\S]+$/m</code> may return matches that span multiple lines because the anchors will match the start/end of <b>any</b> line.</p>' => 'When the multiline flag is enabled, beginning and end anchors (<code>^</code> and <code>$</code>) will match the start and end of a line, instead of the start and end of the whole string.<p>Note that patterns such as <code>/^[\\s\\S]+$/m</code> may return matches that span multiple lines because the anchors will match the start/end of <b>any</b> line.</p>'
+		,'character' => 'character'
+		,'Matches a {{getChar()}} character (char code {{code}}).' => 'Matches a {{getChar()}} character (char code {{code}}).'
+		,'beginning' => 'beginning'
+		,'Matches the beginning of the string, or the beginning of a line if the multiline flag (<code>m</code>) is enabled.' => 'Matches the beginning of the string, or the beginning of a line if the multiline flag (<code>m</code>) is enabled.'
+		,'end' => 'end'
+		,'Matches the end of the string, or the end of a line if the multiline flag (<code>m</code>) is enabled.' => 'Matches the end of the string, or the end of a line if the multiline flag (<code>m</code>) is enabled.'
+	];
+}

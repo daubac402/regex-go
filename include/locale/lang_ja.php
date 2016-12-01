@@ -1,0 +1,35 @@
+<?php
+class CurrentLanguage
+{
+	const LANG = [
+		'Regular Expression' => '正規表現'
+		,'Test String' => '文字列'
+		,'Expression Flags' => '表現フラグ'
+		,'ignore case' => '大文字小文字を無視'
+		,'global' => 'グローバル'
+		,'multiline' => '複数行'
+		,'ERROR: ' => 'エラー：'
+		,'flags' => 'フラグ'
+		,'no match' => '一致しません'
+		,'match' => '一致'
+		,'es' => ''
+		,'infinite' => '無限'
+		,'The expression can match 0 characters, and therefore matches infinitely.' => '式は0文字に一致するため、無限に一致します。'
+		,'open' => 'オープン'
+		,'Indicates the start of a regular expression.' => '正規表現の開始を示します。'
+		,'close' => 'クローズ'
+		,'Indicates the end of a regular expression and the start of expression flags.' => '正規表現の終了と式の開始フラグを示します。'
+		,'global search' => 'ローバル検索'
+		,'Retain the index of the last match, allowing iterative searches.' => '最後の一致のインデックスを保持し、反復検索を許可します。'
+		,'Retain the index of the last match, allowing subsequent searches to start from the end of the previous match.<p>Without the global flag, subsequent searches will return the same match.</p><hr/>RegExr only searches for a single match when the global flag is disabled to avoid infinite match errors.' => '最後の一致のインデックスを保持します。これにより、前回の一致の最後から検索を開始できます。<p>グローバルフラグがなければ、その後の検索で同じ一致が返されます。</p><hr/>正規表現は、無限の一致エラーを避けるためにグローバルフラグが無効の場合にのみ、1つの一致を検索します。'
+		,'Makes the whole expression case-insensitive.' => '式全体を大文字と小文字を区別させません。'
+		,'Beginning/end anchors (<b>^</b>/<b>$</b>) will match the start/end of a line.' => '開始/終了アンカー (<b>^</b>/<b>$</b>) 行の開始/終了と一致します。'
+		,'When the multiline flag is enabled, beginning and end anchors (<code>^</code> and <code>$</code>) will match the start and end of a line, instead of the start and end of the whole string.<p>Note that patterns such as <code>/^[\\s\\S]+$/m</code> may return matches that span multiple lines because the anchors will match the start/end of <b>any</b> line.</p>' => 'マルチラインフラグが有効な場合、アンカーの開始と終了 (<code>^</code> and <code>$</code>) 文字列全体の開始と終了ではなく、行の開始と終了に一致します。<p>パターンといった <code>/^[\s\S]+$/m</code> アンカーが任意の行の開始/終了と一致するため、複数の行にまたがる一致を返すことがあるご了承ください。'
+		,'character' => '文字'
+		,'Matches a {{getChar()}} character (char code {{code}}).' => '文字 {{getChar()}} (charコード {{code}})を一致します。'
+		,'beginning' => '始まり'
+		,'Matches the beginning of the string, or the beginning of a line if the multiline flag (<code>m</code>) is enabled.' => '複数行フラグ (<code>m</code>) が有効な場合は、文字列の先頭または行の先頭に一致します。'
+		,'end' => '終わり'
+		,'Matches the end of the string, or the end of a line if the multiline flag (<code>m</code>) is enabled.' => '複数行フラグ（<code>m</code>）が有効な場合は、文字列の終わりまたは行の終わりに一致します。'
+	];
+}
