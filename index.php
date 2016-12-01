@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- <html lang="en"> -->
-<html lang="ja">
+<html lang="ja" ng-app="RegexApp">
 <?php
     $child_site = '/regex-go'; // for test
     require_once $_SERVER['DOCUMENT_ROOT'] . $child_site . '/include/IncludeBackends.php';
@@ -39,11 +39,16 @@
         <![endif]-->
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="semantic_UI/semantic.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/de_regex_main.css">
+        <script type="text/javascript" src="js/de_regex_main.js"></script>
+        <script type="text/javascript" src="js/de_regex_include.js"></script>
 
         <script src="js/common.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">
+        <script src="semantic_UI/semantic.min.js"></script>
+
 
         <style>
         ins {
@@ -303,6 +308,7 @@
                                         <div class="editor expr">
                                             <div class="results"></div>
                                         </div>
+                                        
                                         <div class="" style="padding-top:10px">
                                             <h5 class="page-header"><?= __('Test String') ?></h5></div>
                                         <div class="editor source">
@@ -310,6 +316,40 @@
                                             <canvas class="canvas" width="1" height="1"></canvas>
                                             <textarea class="default">
                                             </textarea>
+                                        </div>
+                                        <div class="" style="padding-top:10px">
+                                            <div ng-controller="A">
+                                                <div ng-controller="B">
+                                                    <div ng-controller="C">
+                                                        <div ng-controller="D">
+                                                            <div ng-controller="E">
+                                                                <div class="sidepadded">
+                                                                    <div ng-controller="HiliteRegexCtrl">
+                                                                        <div ng-controller="MarkerRegexCtrl" ng-init="reTrigger()">
+                                                                            <div class="main-outline">
+                                                                                <div class="modelarea markerarea" ng-init="mReModel.cls=dbxDirModel.reColor" title="Regular Expression editor" min-lines="4" dbx-model-val="reModel.val" dbx-model-pos="mReModel.pos" dbx-model-init="reModel.init" dbx-dir="dbxDirModel" dbx-trigger-func="reTrigger()" dbx-hilites="hReModel.hilites" dbx-markers="mReModel" dbx-placeholder="My regular expression" show-gutter="true">
+                                                                                </div>
+                                                                                <div>
+                                                                                  <div class="sa-message clearfix;">
+                                                                                      <span class="center-align error">
+                                                                                        <span ng-show="nfaModel.error.msg">{{nfaModel.error.msg}}</span>
+                                                                                      <span ng-hide="nfaModel.error.msg">&nbsp;</span>
+                                                                                      </span>
+                                                                                  </div>
+                                                                                </div>
+                                                                                <div class="nfadiagram nfamarkerdiagram" style="min-height:200px" ng-hide="isTextMode" title="Regular expression visualization" dbx-nfa="nfaModel.val" dbx-dir="dbxDirModel" dbx-markers="mReModel">
+                                                                                </div>
+                                                                                <div class="nfatextdiagram" style="min-height:207px" ng-show="isTextMode" title="Regular expression textualization" dbx-nfa="nfaModel.val">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="title subst" style="padding-top:10px"></div>
                                         <div class="editor subst"></div>
