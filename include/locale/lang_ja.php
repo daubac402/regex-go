@@ -19,7 +19,7 @@ class CurrentLanguage
 		,'Indicates the start of a regular expression.' => '正規表現の開始を示します。'
 		,'close' => 'クローズ'
 		,'Indicates the end of a regular expression and the start of expression flags.' => '正規表現の終了と式の開始フラグを示します。'
-		,'global search' => 'ローバル検索'
+		,'global search' => 'グローバル検索'
 		,'Retain the index of the last match, allowing iterative searches.' => '最後の一致のインデックスを保持し、反復検索を許可します。'
 		,'Retain the index of the last match, allowing subsequent searches to start from the end of the previous match.<p>Without the global flag, subsequent searches will return the same match.</p><hr/>RegExr only searches for a single match when the global flag is disabled to avoid infinite match errors.' => '最後の一致のインデックスを保持します。これにより、前回の一致の最後から検索を開始できます。<p>グローバルフラグがなければ、その後の検索で同じ一致が返されます。</p><hr/>正規表現は、無限の一致エラーを避けるためにグローバルフラグが無効の場合にのみ、1つの一致を検索します。'
 		,'Makes the whole expression case-insensitive.' => '式全体を大文字と小文字を区別させません。'
