@@ -38,13 +38,15 @@
         <![endif]-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/de_regex_main.css">
+        <link rel="stylesheet" type="text/css" href="css/de_regex_main.css?v=20161205">
         <script type="text/javascript" src="js/de_regex_main.js"></script>
         <script type="text/javascript" src="js/de_regex_include.js"></script>
         <script src="js/common.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">
         <script src="semantic_UI/semantic.min.js"></script>
         <?php require_once $_SERVER['DOCUMENT_ROOT'] . $child_site . '/js/scripts.php'; ?>
+        <link rel="stylesheet" href="css/regex_go_main.css?v=20161205">
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
         <style>
         ins {
             text-decoration: none;
@@ -102,7 +104,8 @@
         <!--Start Container-->
         <div id="main" class="container-fluid sidebar-show" style="overflow:visible;">
             <div class="row">
-                <div id="sidebar-left" class="col-xs-2 col-sm-2">
+                <div id="sidebar-left" class="col-xs-2 col-sm-2" style="max-width:350px;max-height:294px;">
+                    &nbsp;
                     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                     <ins class="adsbygoogle"
                          style="display:block"
@@ -110,176 +113,22 @@
                          data-ad-slot="2521908577"
                          data-ad-format="auto"></ins>
                     <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    $(document).ready(function(){(adsbygoogle = window.adsbygoogle || []).push({})})
                     </script>
                 </div>
                 <!--Start Content-->
                 <div id="content" class="col-xs-12 col-sm-10" style="min-height:1000px;padding-left:0px; padding-right:0px;">
-                    <link rel="stylesheet" href="css/regexrf934.css?v=20161125">
-                    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
                     <div style="display:none;">
-                        <div class="top">
-                            <h1 class="icon regexr-logo"></h1>
-                            <h1 class="regexr-text">RegexGo</h1><span class="version regexr-text">(c) daubac403@gmail.com</span>
-                        </div>
                         <div class="lib hidden" id="libview">
-                            <div class="content"><b>RegexGo is a tool to <b>learn</b>, <b>build</b>, & <b>test</b> Regular Expressions (RegEx / RegExp).</b>
-                                <hr>
-                                <ul>
-                                    <li>Results update in <b>real-time</b> as you type.</li>
-                                    <li><b>Roll over</b> a match or expression for details.</li>
-                                    <li><b>Save</b> & <b>share</b> expressions with others.</li>
-                                    <li>Explore the <b>Library</b> for help & examples.</li>
-                                    <li><b>Undo</b> & <b>Redo</b> with {{getCtrlKey()}}-Z / Y.</li>
-                                    <li>Search for & rate <b>Community</b> patterns.</li>
-                                </ul>
-                            </div>
-                            <div id="cheatsheet">
-                                <table class="cheatsheet">
-                                    <tr>
-                                        <th colspan="2" onclick="regexr.libView.show('charclasses')">Character classes</th>
-                                    </tr>
-                                    <tr>
-                                        <td>.</td>
-                                        <td>any character except newline</td>
-                                    </tr>
-                                    <tr>
-                                        <td>\w \d \s</td>
-                                        <td>word, digit, whitespace</td>
-                                    </tr>
-                                    <tr>
-                                        <td>\W \D \S</td>
-                                        <td>not word, digit, whitespace</td>
-                                    </tr>
-                                    <tr>
-                                        <td>[abc]</td>
-                                        <td>any of a, b, or c</td>
-                                    </tr>
-                                    <tr>
-                                        <td>[^abc]</td>
-                                        <td>not a, b, or c</td>
-                                    </tr>
-                                    <tr>
-                                        <td>[a-g]</td>
-                                        <td>character between a & g</td>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="2" onclick="regexr.libView.show('anchors')">Anchors</th>
-                                    </tr>
-                                    <tr>
-                                        <td>^abc$</td>
-                                        <td>start / end of the string</td>
-                                    </tr>
-                                    <tr>
-                                        <td>\b</td>
-                                        <td>word boundary</td>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="2" onclick="regexr.libView.show('escchars')">Escaped characters</th>
-                                    </tr>
-                                    <tr>
-                                        <td>\. \* \\</td>
-                                        <td>escaped special characters</td>
-                                    </tr>
-                                    <tr>
-                                        <td>\t \n \r</td>
-                                        <td>tab, linefeed, carriage return</td>
-                                    </tr>
-                                    <tr>
-                                        <td>\u00A9</td>
-                                        <td>unicode escaped &copy;</td>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="2" onclick="regexr.libView.show('groups')">Groups & Lookaround</th>
-                                    </tr>
-                                    <tr>
-                                        <td>(abc)</td>
-                                        <td>capture group</td>
-                                    </tr>
-                                    <tr>
-                                        <td>\1</td>
-                                        <td>backreference to group #1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>(?:abc)</td>
-                                        <td>non-capturing group</td>
-                                    </tr>
-                                    <tr>
-                                        <td>(?=abc)</td>
-                                        <td>positive lookahead</td>
-                                    </tr>
-                                    <tr>
-                                        <td>(?!abc)</td>
-                                        <td>negative lookahead</td>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="2" onclick="regexr.libView.show('quants')">Quantifiers & Alternation</th>
-                                    </tr>
-                                    <tr>
-                                        <td>a* a+ a?</td>
-                                        <td>0 or more, 1 or more, 0 or 1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>a{5} a{2,}</td>
-                                        <td>exactly five, two or more</td>
-                                    </tr>
-                                    <tr>
-                                        <td>a{1,3}</td>
-                                        <td>between one & three</td>
-                                    </tr>
-                                    <tr>
-                                        <td>a+? a{2,}?</td>
-                                        <td>match as few as possible</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ab|cd</td>
-                                        <td>match ab or cd</td>
-                                    </tr>
-                                </table>
-                            </div>
+                            <div class="content"></div>
+                            <div id="cheatsheet"></div>
                         </div>
                     </div>
-                    <style>
-                    html,
-                    body {
-                        height: 100%;
-                    }
+                    <div class="top">
+                        <h1 class="icon regexr-logo"></h1>
+                        <h1 class="regexr-text">RegexGo</a></h1><span class="version regexr-text">.pe.hu</span>
+                    </div>
                     
-                    #main {
-                        height: 100%;
-                    }
-                    
-                    #main .row {
-                        height: 100%;
-                        width: 100%;
-                        margin: 0 auto;
-                    }
-                    
-                    #content {
-                        height: 100%;
-                        min-height: 10px !important;
-                    }
-                    
-                    .col-sm-5 {
-                        height: 100%;
-                    }
-                    
-                    .col-md-4 {
-                        height: 100%;
-                    }
-                    
-                    .box {
-                        height: 100%;
-                    }
-                    
-                    .box-content {
-                        height: 100%;
-                    }
-                    
-                    .pcreflag {
-                        display: none;
-                    }
-                    </style>
                     <script>
                     $(document).ready(function() {
                         $('.flags').on('click', function() {
@@ -288,19 +137,6 @@
                             } else {
                                 $('.pcreflag').css("display", "none");
                             }
-                        });
-                        $('#save').click(function() {
-                            $('input[name=expr]').val(regexr.docView.getExpression());
-                            $('input[name=text]').val(regexr.docView.getText());
-                            $('input[name=subst]').val(regexr.docView.getSubstitution());
-                            $('input[name=engine]').val($('#engine').val());
-                            /*      if ($('#name').val() != '' && $('#desc').val() != '') {
-                                        $.post("save.php",{name: $('#name').val(), desc: $('#desc').val, exp: regexr.docView.getExpression(), text: regexr.docView.getText(), subst: regexr.docView.getSubstitution()})
-                                            .done(function () { alert(""
-                                    } else {
-                                        alert('Please enter a name and description');
-                                    }
-                            */
                         });
                     });
                     </script>
@@ -409,7 +245,117 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            abc
+                            <div class="content"><b>RegexGo is a tool to <b>learn</b>, <b>build</b>, & <b>test</b> Regular Expressions.</b>
+                                <hr>
+                                <ul>
+                                    <li>Results update in <b>real-time</b> as you type.</li>
+                                    <li><b>Roll over</b> a match or expression for details.</li>
+                                    <li><b>Undo</b> & <b>Redo</b> with Ctrl-Z / Y.</li>
+                                </ul>
+                            </div>
+                            <div id="cheatsheet">
+                                <table class="cheatsheet">
+                                    <tr>
+                                        <th colspan="2">Character classes</th>
+                                    </tr>
+                                    <tr>
+                                        <td>.</td>
+                                        <td>any character except newline</td>
+                                    </tr>
+                                    <tr>
+                                        <td>\w \d \s</td>
+                                        <td>word, digit, whitespace</td>
+                                    </tr>
+                                    <tr>
+                                        <td>\W \D \S</td>
+                                        <td>not word, digit, whitespace</td>
+                                    </tr>
+                                    <tr>
+                                        <td>[abc]</td>
+                                        <td>any of a, b, or c</td>
+                                    </tr>
+                                    <tr>
+                                        <td>[^abc]</td>
+                                        <td>not a, b, or c</td>
+                                    </tr>
+                                    <tr>
+                                        <td>[a-g]</td>
+                                        <td>character between a & g</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2" onclick="regexr.libView.show('anchors')">Anchors</th>
+                                    </tr>
+                                    <tr>
+                                        <td>^abc$</td>
+                                        <td>start / end of the string</td>
+                                    </tr>
+                                    <tr>
+                                        <td>\b</td>
+                                        <td>word boundary</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2" onclick="regexr.libView.show('escchars')">Escaped characters</th>
+                                    </tr>
+                                    <tr>
+                                        <td>\. \* \\</td>
+                                        <td>escaped special characters</td>
+                                    </tr>
+                                    <tr>
+                                        <td>\t \n \r</td>
+                                        <td>tab, linefeed, carriage return</td>
+                                    </tr>
+                                    <tr>
+                                        <td>\u00A9</td>
+                                        <td>unicode escaped &copy;</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2" onclick="regexr.libView.show('groups')">Groups & Lookaround</th>
+                                    </tr>
+                                    <tr>
+                                        <td>(abc)</td>
+                                        <td>capture group</td>
+                                    </tr>
+                                    <tr>
+                                        <td>\1</td>
+                                        <td>backreference to group #1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>(?:abc)</td>
+                                        <td>non-capturing group</td>
+                                    </tr>
+                                    <tr>
+                                        <td>(?=abc)</td>
+                                        <td>positive lookahead</td>
+                                    </tr>
+                                    <tr>
+                                        <td>(?!abc)</td>
+                                        <td>negative lookahead</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2" onclick="regexr.libView.show('quants')">Quantifiers & Alternation</th>
+                                    </tr>
+                                    <tr>
+                                        <td>a* a+ a?</td>
+                                        <td>0 or more, 1 or more, 0 or 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>a{5} a{2,}</td>
+                                        <td>exactly five, two or more</td>
+                                    </tr>
+                                    <tr>
+                                        <td>a{1,3}</td>
+                                        <td>between one & three</td>
+                                    </tr>
+                                    <tr>
+                                        <td>a+? a{2,}?</td>
+                                        <td>match as few as possible</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ab|cd</td>
+                                        <td>match ab or cd</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                         <img class="hidden spinner" src="data:image/gif;base64,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"> <img class="hidden spinner white" src="data:image/gif;base64,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">
                         <div class="not-supported-mobile hidden">
