@@ -40,5 +40,10 @@ class CurrentLanguage
 		,'character between a & G (a, b, .., z, A, B, .., G)' => '「a」から「G」まで1文字'
 		,'Anchors' => 'アンカー'
 		,'start / end of the string' => '文字列の開始/終了'
+		,'word boundary' => '単語境界'
+		,'Escaped characters' => 'エスケープ文字'
+		,'escaped . * \ ' => '. * \ をエスケープする'
+		,'tab, linefeed, carriage return' => 'タブ、改行、復帰'
+		,'unicode escaped' => 'ユニコード文字'
 	];
 }

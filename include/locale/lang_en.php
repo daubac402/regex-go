@@ -40,5 +40,10 @@ class CurrentLanguage
 		,'character between a & G (a, b, .., z, A, B, .., G)' => 'character between a & G (a, b, .., z, A, B, .., G)'
 		,'Anchors' => 'Anchors'
 		,'start / end of the string' => 'start / end of the string'
+		,'word boundary' => 'word boundary'
+		,'Escaped characters' => 'Escaped characters'
+		,'escaped . * \ ' => 'escaped . * \ '
+		,'tab, linefeed, carriage return' => 'tab, linefeed, carriage return'
+		,'unicode escaped' => 'unicode escaped'
 	];
 }

@@ -40,5 +40,10 @@ class CurrentLanguage
 		,'character between a & G (a, b, .., z, A, B, .., G)' => 'chữ cái trong khoảng từ a đến G (a, b, .., z, A, B, .., G)'
 		,'Anchors' => 'Anchors'
 		,'start / end of the string' => 'bắt đầu / kết thúc của chuỗi'
+		,'word boundary' => 'bao cả một từ'
+		,'Escaped characters' => 'Ký tự đặc biệt'
+		,'escaped . * \ ' => 'ký tự: . * \ '
+		,'tab, linefeed, carriage return' => 'ký tự: tab, xuống dòng, return'
+		,'unicode escaped' => 'ký tự unicode'
 	];
 }

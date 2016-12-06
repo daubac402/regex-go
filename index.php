@@ -322,28 +322,26 @@
                                     </tr>
                                     <tr>
                                         <td>^abc$</td>
-                                        <td>
-                                            <?= __('start / end of the string') ?>
-                                        </td>
+                                        <td><?= __('start / end of the string') ?></td>
                                     </tr>
                                     <tr>
                                         <td>\b</td>
-                                        <td>word boundary</td>
+                                        <td><?= __('word boundary') ?></td>
                                     </tr>
                                     <tr>
-                                        <th colspan="2">Escaped characters</th>
+                                        <th colspan="2"><?= __('Escaped characters') ?></th>
                                     </tr>
                                     <tr>
                                         <td>\. \* \\</td>
-                                        <td>escaped special characters</td>
+                                        <td><?= __('escaped . * \ ') ?></td>
                                     </tr>
                                     <tr>
                                         <td>\t \n \r</td>
-                                        <td>tab, linefeed, carriage return</td>
+                                        <td><?= __('tab, linefeed, carriage return') ?></td>
                                     </tr>
                                     <tr>
                                         <td>\u00A9</td>
-                                        <td>unicode escaped &copy;</td>
+                                        <td><?= __('unicode escaped') ?></td>
                                     </tr>
                                     <tr>
                                         <th colspan="2">Groups & Lookaround</th>
