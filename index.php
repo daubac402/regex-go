@@ -144,7 +144,6 @@
                         </div>
                     </div>
                     <div class="top">
-                        <h1 class="icon regexr-logo"></h1>
                         <h1 class="regexr-text">RegexGo</a></h1><span class="version regexr-text">.pe.hu</span>
                     </div>
                     <script>
