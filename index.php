@@ -36,7 +36,8 @@
                 <script src="/js/html5shiv.js"></script>
                 <script src="/js/respond.min.js"></script>
         <![endif]-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <?php require_once $_SERVER['DOCUMENT_ROOT'] . $child_site . '/js/scripts.php'; ?>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/de_regex_main.css?v=20161205">
         <script type="text/javascript" src="js/de_regex_main.js"></script>
@@ -44,26 +45,23 @@
         <script src="js/common.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">
         <script src="semantic_UI/semantic.min.js"></script>
-        <?php require_once $_SERVER['DOCUMENT_ROOT'] . $child_site . '/js/scripts.php'; ?>
         <link rel="stylesheet" href="css/regex_go_main.css?v=20161206">
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
         <script src="https://apis.google.com/js/platform.js" async defer></script>
-        <script>
-        window.twttr = (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0],
-                t = window.twttr || {};
-            if (d.getElementById(id)) return t;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://platform.twitter.com/widgets.js";
-            fjs.parentNode.insertBefore(js, fjs);
-
-            t._e = [];
-            t.ready = function(f) {
-                t._e.push(f);
-            };
-
-            return t;
+        <script async>
+            window.twttr = (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0],
+                    t = window.twttr || {};
+                if (d.getElementById(id)) return t;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+                t._e = [];
+                t.ready = function(f) {
+                    t._e.push(f);
+                };
+                return t;
         }(document, "script", "twitter-wjs"));
         </script>
         <style>
@@ -93,6 +91,8 @@
             padding: 10px 0;
         }
         </style>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
     </head>
 
     <body>
