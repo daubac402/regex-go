@@ -31,5 +31,14 @@ class CurrentLanguage
 		,'Matches the beginning of the string, or the beginning of a line if the multiline flag (<code>m</code>) is enabled.' => 'Matches the beginning of the string, or the beginning of a line if the multiline flag (<code>m</code>) is enabled.'
 		,'end' => 'end'
 		,'Matches the end of the string, or the end of a line if the multiline flag (<code>m</code>) is enabled.' => 'Matches the end of the string, or the end of a line if the multiline flag (<code>m</code>) is enabled.'
+		,'Character classes' => 'Character classes'
+		,'any character except newline' => 'any character except newline'
+		,'word, digit, whitespace' => 'word, digit, whitespace'
+		,'not word, digit, whitespace' => 'not word, digit, whitespace'
+		,'any of a, b, or c' => 'any of a, b, or c'
+		,'not a, b, or c' => 'not a, b, or c'
+		,'character between a & G (a, b, .., z, A, B, .., G)' => 'character between a & G (a, b, .., z, A, B, .., G)'
+		,'Anchors' => 'Anchors'
+		,'start / end of the string' => 'start / end of the string'
 	];
 }

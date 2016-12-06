@@ -45,8 +45,27 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">
         <script src="semantic_UI/semantic.min.js"></script>
         <?php require_once $_SERVER['DOCUMENT_ROOT'] . $child_site . '/js/scripts.php'; ?>
-        <link rel="stylesheet" href="css/regex_go_main.css?v=20161205">
+        <link rel="stylesheet" href="css/regex_go_main.css?v=20161206">
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script>
+        window.twttr = (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+
+            t._e = [];
+            t.ready = function(f) {
+                t._e.push(f);
+            };
+
+            return t;
+        }(document, "script", "twitter-wjs"));
+        </script>
         <style>
         ins {
             text-decoration: none;
@@ -93,27 +112,27 @@
         ga('send', 'pageview');
         </script>
         <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=330208494007688";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-
+        <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=330208494007688";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
         <!--Start Container-->
         <div id="main" class="container-fluid sidebar-show" style="overflow:visible;">
             <div class="row">
                 <div id="sidebar-left" class="col-xs-2 col-sm-2" style="max-width:350px;max-height:294px;">
                     &nbsp;
                     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <ins class="adsbygoogle"
-                         style="display:block"
-                         data-ad-client="ca-pub-8395820335361202"
-                         data-ad-slot="2521908577"
-                         data-ad-format="auto"></ins>
+                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8395820335361202" data-ad-slot="2521908577" data-ad-format="auto"></ins>
                     <script>
-                    $(document).ready(function(){(adsbygoogle = window.adsbygoogle || []).push({})})
+                    $(document).ready(function() {
+                        (adsbygoogle = window.adsbygoogle || []).push({})
+                    })
                     </script>
                 </div>
                 <!--Start Content-->
@@ -128,7 +147,6 @@
                         <h1 class="icon regexr-logo"></h1>
                         <h1 class="regexr-text">RegexGo</a></h1><span class="version regexr-text">.pe.hu</span>
                     </div>
-                    
                     <script>
                     $(document).ready(function() {
                         $('.flags').on('click', function() {
@@ -144,6 +162,8 @@
                         <div class="col-md-8">
                             <div style="float:right;">
                                 <div class="fb-like" data-href="http://regexgo.pe.hu/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+                                <div class="sns_container"><a class="twitter-share-button" href="http://regexgo.pe.hu/">Tweet</a></div>
+                                <div class="sns_container"><div class="g-plusone" data-size="medium" data-href="http://regexgo.pe.hu/"></div></div>
                                 <div class="ui floating dropdown labeled icon button">
                                     <i class="world icon"></i>
                                     <span class="text">Language</span>
@@ -256,45 +276,63 @@
                             <div id="cheatsheet">
                                 <table class="cheatsheet">
                                     <tr>
-                                        <th colspan="2">Character classes</th>
+                                        <th colspan="2">
+                                            <?= __('Character classes') ?>
+                                        </th>
                                     </tr>
                                     <tr>
                                         <td>.</td>
-                                        <td>any character except newline</td>
+                                        <td>
+                                            <?= __('any character except newline') ?>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>\w \d \s</td>
-                                        <td>word, digit, whitespace</td>
+                                        <td>
+                                            <?= __('word, digit, whitespace') ?>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>\W \D \S</td>
-                                        <td>not word, digit, whitespace</td>
+                                        <td>
+                                            <?= __('not word, digit, whitespace') ?>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>[abc]</td>
-                                        <td>any of a, b, or c</td>
+                                        <td>
+                                            <?= __('any of a, b, or c') ?>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>[^abc]</td>
-                                        <td>not a, b, or c</td>
+                                        <td>
+                                            <?= __('not a, b, or c') ?>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>[a-g]</td>
-                                        <td>character between a & g</td>
+                                        <td>[a-G]</td>
+                                        <td>
+                                            <?= __('character between a & G (a, b, .., z, A, B, .., G)') ?>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <th colspan="2" onclick="regexr.libView.show('anchors')">Anchors</th>
+                                        <th colspan="2">
+                                            <?= __('Anchors') ?>
+                                        </th>
                                     </tr>
                                     <tr>
                                         <td>^abc$</td>
-                                        <td>start / end of the string</td>
+                                        <td>
+                                            <?= __('start / end of the string') ?>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>\b</td>
                                         <td>word boundary</td>
                                     </tr>
                                     <tr>
-                                        <th colspan="2" onclick="regexr.libView.show('escchars')">Escaped characters</th>
+                                        <th colspan="2">Escaped characters</th>
                                     </tr>
                                     <tr>
                                         <td>\. \* \\</td>
@@ -309,7 +347,7 @@
                                         <td>unicode escaped &copy;</td>
                                     </tr>
                                     <tr>
-                                        <th colspan="2" onclick="regexr.libView.show('groups')">Groups & Lookaround</th>
+                                        <th colspan="2">Groups & Lookaround</th>
                                     </tr>
                                     <tr>
                                         <td>(abc)</td>
@@ -332,7 +370,7 @@
                                         <td>negative lookahead</td>
                                     </tr>
                                     <tr>
-                                        <th colspan="2" onclick="regexr.libView.show('quants')">Quantifiers & Alternation</th>
+                                        <th colspan="2">Quantifiers & Alternation</th>
                                     </tr>
                                     <tr>
                                         <td>a* a+ a?</td>

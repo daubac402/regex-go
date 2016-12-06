@@ -31,5 +31,14 @@ class CurrentLanguage
 		,'Matches the beginning of the string, or the beginning of a line if the multiline flag (<code>m</code>) is enabled.' => 'Khớp với ký tự mở chuỗi hoặc đầu dòng nếu như cờ đa dòng (<code>m</code>) được bật.'
 		,'end' => 'Ký tự kết thúc chuỗi'
 		,'Matches the end of the string, or the end of a line if the multiline flag (<code>m</code>) is enabled.' => 'Khớp với ký tự đóng chuỗi hoặc cuối dòng nếu như cờ đa dòng (<code>m</code>) được bật.'
+		,'Character classes' => 'Lớp ký tự'
+		,'any character except newline' => 'tất cả các ký tự trừ ký tự xuống dòng'
+		,'word, digit, whitespace' => 'chữ cái, chữ số, dấu cách'
+		,'not word, digit, whitespace' => 'không là chữ cái, chữ số, dấu cách'
+		,'any of a, b, or c' => 'hoặc a hoặc b hoặc c'
+		,'not a, b, or c' => 'không phải a cũng không phải b cũng không phải c'
+		,'character between a & G (a, b, .., z, A, B, .., G)' => 'chữ cái trong khoảng từ a đến G (a, b, .., z, A, B, .., G)'
+		,'Anchors' => 'Anchors'
+		,'start / end of the string' => 'bắt đầu / kết thúc của chuỗi'
 	];
 }

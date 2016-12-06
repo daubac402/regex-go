@@ -31,5 +31,14 @@ class CurrentLanguage
 		,'Matches the beginning of the string, or the beginning of a line if the multiline flag (<code>m</code>) is enabled.' => '複数行フラグ (<code>m</code>) が有効な場合は、文字列の先頭または行の先頭に一致します。'
 		,'end' => '終わり'
 		,'Matches the end of the string, or the end of a line if the multiline flag (<code>m</code>) is enabled.' => '複数行フラグ（<code>m</code>）が有効な場合は、文字列の終わりまたは行の終わりに一致します。'
+		,'Character classes' => '文字クラス'
+		,'any character except newline' => '改行以外の1文字'
+		,'word, digit, whitespace' => 'アルファベットか数字かアンダースコア1文字、番号（[0-9]と同じ）、空白1文字 （[　\r\t\n\f\v] と同じ）'
+		,'not word, digit, whitespace' => 'アルファベット、数字、アンダースコア以外の1文字、番号以外　（[^0-9]と同じ）、空白以外1文字　（[^ \r\t\n\f\v] と同じ）'
+		,'any of a, b, or c' => 'a,b,c いずれかの1文字'
+		,'not a, b, or c' => 'a,b,c以外の1文字'
+		,'character between a & G (a, b, .., z, A, B, .., G)' => '「a」から「G」まで1文字'
+		,'Anchors' => 'アンカー'
+		,'start / end of the string' => '文字列の開始/終了'
 	];
 }
