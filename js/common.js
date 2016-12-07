@@ -27,4 +27,12 @@ $(document).ready(function() {
             }
         },
     });
+
+    $('.flags').on('click', function() {
+        if ($('#engine').val() == 'pcre') {
+            $('.pcreflag').css("display", "block");
+        } else {
+            $('.pcreflag').css("display", "none");
+        }
+    });
 });
