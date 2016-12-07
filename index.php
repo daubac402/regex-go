@@ -320,13 +320,6 @@
                                 </table>
                             </div>
                         </div>
-                            <div class="top">
-                                <h1 class="icon regexr-logo">&#xE600;</h1>
-                                <h1 class="regexr-text">RegexGo</h1><span class="version regexr-text"></span>
-                            </div>
-                            <div class="content">
-                                <p>RegexGo isn't optimized for mobile devices yet. You can still take a look, but it might be a bit quirky.</p><a id="closeOverlay"><b>&gt;</b> Okay!</a>
-                            </div>
                         </div>
                         <div class="not-supported hidden">
                             <div class="top">
