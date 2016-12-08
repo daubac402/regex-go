@@ -31,7 +31,7 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <![endif]-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-        <?php require_once $_SERVER['DOCUMENT_ROOT'] . $child_site . '/js/scripts.php'; ?>
+        <script><?php require_once $_SERVER['DOCUMENT_ROOT'] . $child_site . '/js/scripts.min.php'; ?></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/de_regex_main.css?v=20161208">
         <script type="text/javascript" src="js/de_regex_main.js"></script>
