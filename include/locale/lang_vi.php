@@ -37,7 +37,7 @@ class CurrentLanguage
 		,'not word, digit, whitespace' => 'không là chữ cái, chữ số, ký tự trắng'
 		,'any of a, b, or c' => 'hoặc a hoặc b hoặc c'
 		,'not a, b, or c' => 'không phải a cũng không phải b cũng không phải c'
-		,'character between A & g (A, B, .., Z, a, b, .., g)' => 'chữ cái trong khoảng từ A đến g (a, b, .., z, A, B, .., G)'
+		,'character between A & g (A, B, .., Z, a, b, .., g)' => 'chữ cái trong khoảng từ A đến g (A, B, .., Z, a, b, .., g)'
 		,'Anchors' => 'Anchors'
 		,'start / end of the string' => 'bắt đầu / kết thúc của chuỗi'
 		,'word boundary' => 'bao cả một từ'
