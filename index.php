@@ -33,13 +33,13 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
         <?php require_once $_SERVER['DOCUMENT_ROOT'] . $child_site . '/js/scripts.php'; ?>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/de_regex_main.css?v=20161205">
+        <link rel="stylesheet" type="text/css" href="css/de_regex_main.css?v=20161208">
         <script type="text/javascript" src="js/de_regex_main.js"></script>
         <script type="text/javascript" src="js/de_regex_include.js"></script>
         <script src="js/common.js?v=20161207"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">
         <script src="semantic_UI/semantic.min.js"></script>
-        <link rel="stylesheet" href="css/regex_go_main.css?v=20161207">
+        <link rel="stylesheet" href="css/regex_go_main.css?v=20161208">
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
         <script src="https://apis.google.com/js/platform.js" async defer></script>
         <script async>window.twttr=function(a,b,c){var d,e=a.getElementsByTagName(b)[0],f=window.twttr||{};return a.getElementById(c)?f:(d=a.createElement(b),d.id=c,d.src="https://platform.twitter.com/widgets.js",e.parentNode.insertBefore(d,e),f._e=[],f.ready=function(a){f._e.push(a)},f)}(document,"script","twitter-wjs");</script>
@@ -70,7 +70,7 @@
                         <h1 class="regexr-text">RegexGo</a></h1><span class="version regexr-text">.pe.hu</span>
                     </div>
                     <div class="row secondrow">
-                        <div class="col-md-8">
+                        <div class="col-md-8" style="min-height:730px">
                             <div style="float:right;text-align:right;width:64%">
                                 <div class="ui floating dropdown labeled icon button" style="line-height:12px">
                                     <i class="world icon"></i>
@@ -93,7 +93,7 @@
                                         <div>
                                             <h5 class="page-header"><?= __('Regular Expression') ?>
                                             <ul class="buttonbar">
-                                                <li class="button flags regex_flg" data-icon="&#xE267;"><?= __('flags') ?></li>
+                                                <li class="button flags regex_flg" data-icon="&#xf024;"><?= __('flags') ?></li>
                                             </ul>
                                         </h5>
                                         </div>
@@ -147,20 +147,12 @@
                                         <div class="menu flags">
                                             <header>
                                                 <?= __('Expression Flags') ?>
-                                                    <ul style="display:none" class="buttonbar">
-                                                        <li class="button help" data-icon="&#xE195;"></li>
-                                                    </ul>
+                                                    <ul style="" class="buttonbar"><li class="button help" data-icon="&#xf129;"></li></ul>
                                             </header>
-                                            <hr />
-                                            <a style="text-decoration:none" class="check" data-flag="i">
-                                                <?= __('ignore case') ?> (i)</a>
-                                            <br />
-                                            <a style="text-decoration:none" class="check" data-flag="g">
-                                                <?= __('global') ?> (g)</a>
-                                            <br />
-                                            <a style="text-decoration:none" class="check" data-flag="m">
-                                                <?= __('multiline') ?> (m)</a>
-                                            <div class="pcreflag">
+                                            <hr>
+                                            <a class="check" data-flag="i"> <?= __('ignore case') ?> (i)</a><br>
+                                            <a class="check" data-flag="g"> <?= __('global') ?> (g)</a><br>
+                                            <a class="check" data-flag="m"> <?= __('multiline') ?> (m)</a><div class="pcreflag">
                                                 <a style="text-decoration:none" class="check" data-flag="x">extended (x)</a>
                                                 <br /><a style="text-decoration:none" class="check" data-flag="X">extra (X)</a>
                                                 <br /><a style="text-decoration:none" class="check" data-flag="s">single line (s)</a>
@@ -187,7 +179,7 @@
                             <div id="cheatsheet">
                                 <table class="cheatsheet">
                                     <tr>
-                                        <th colspan="2"><?= __('Character classes') ?></th>
+                                        <th colspan="2" class="button" data-icon="&#xf03a;"><?= __('Character classes') ?></th>
                                     </tr>
                                     <tr>
                                         <td>.</td>
@@ -214,7 +206,7 @@
                                         <td><?= __('character between a & G (a, b, .., z, A, B, .., G)') ?></td>
                                     </tr>
                                     <tr>
-                                        <th colspan="2"><?= __('Anchors') ?></th>
+                                        <th colspan="2" class="button" data-icon="&#xf03a;"><?= __('Anchors') ?></th>
                                     </tr>
                                     <tr>
                                         <td>^abc$</td>
@@ -225,7 +217,7 @@
                                         <td><?= __('word boundary') ?></td>
                                     </tr>
                                     <tr>
-                                        <th colspan="2"><?= __('Escaped characters') ?></th>
+                                        <th colspan="2" class="button" data-icon="&#xf03a;"><?= __('Escaped characters') ?></th>
                                     </tr>
                                     <tr>
                                         <td>\. \* \\</td>
@@ -240,7 +232,7 @@
                                         <td><?= __('unicode escaped') ?></td>
                                     </tr>
                                     <tr>
-                                        <th colspan="2"><?= __('Groups & Lookaround') ?></th>
+                                        <th colspan="2" class="button" data-icon="&#xf03a;"><?= __('Groups & Lookaround') ?></th>
                                     </tr>
                                     <tr>
                                         <td>(abc)</td>
@@ -275,7 +267,7 @@
                                         <td><?= __('atomic group') ?> <?= __('(not supported in Javascript)') ?></td>
                                     </tr>
                                     <tr>
-                                        <th colspan="2"><?= __('Quantifiers & Alternation') ?></th>
+                                        <th colspan="2" class="button" data-icon="&#xf03a;"><?= __('Quantifiers & Alternation') ?></th>
                                     </tr>
                                     <tr>
                                         <td>a*</td>

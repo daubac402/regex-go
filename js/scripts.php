@@ -10035,7 +10035,7 @@ CMUtils.getCharIndexAt = function(a, b, c) {
     }, p.updateFlagsMenu = function() {
         Tracking.event("flags", "show"), this.flagsMenu.setFlags(this.getFlags())
     }, p.showFlagsHelp = function() {
-        this.flagsTooltip.hide(), this.libView.show("flags")
+        // this.flagsTooltip.hide(), this.libView.show("flags")
     }, p.deferUpdate = function(a) {
         dan.clearDefer("draw"), dan.defer(this, this.update, "update", a)
     }, p.deferResize = function() {
