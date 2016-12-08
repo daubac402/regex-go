@@ -43,6 +43,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
         <script src="https://apis.google.com/js/platform.js" async defer></script>
         <script async>window.twttr=function(a,b,c){var d,e=a.getElementsByTagName(b)[0],f=window.twttr||{};return a.getElementById(c)?f:(d=a.createElement(b),d.id=c,d.src="https://platform.twitter.com/widgets.js",e.parentNode.insertBefore(d,e),f._e=[],f.ready=function(a){f._e.push(a)},f)}(document,"script","twitter-wjs");</script>
+        <script src="//scdn.line-apps.com/n/line_it/thirdparty/loader.min.js" async="async" defer="defer"></script>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
     </head>
@@ -71,7 +72,7 @@
                     </div>
                     <div class="row secondrow">
                         <div class="col-md-8" style="min-height:730px">
-                            <div style="float:right;text-align:right;width:64%">
+                            <div style="float:right;text-align:right;width:72%">
                                 <div class="ui floating dropdown labeled icon button" style="line-height:12px">
                                     <i class="world icon"></i>
                                     <span class="text">Language</span>
@@ -84,6 +85,7 @@
                                 <div class="clearfix"></div>
                                 <div class="fb-like" data-href="http://regexgo.pe.hu/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
                                 <div class="sns_container"><a class="twitter-share-button" href="http://regexgo.pe.hu/">Tweet</a></div>
+                                <div class="sns_container"><div class="line-it-button" style="display:none" data-type="share-a" data-lang="<?= ($locale=='ja')?'ja':'en' ?>" ></div></div>
                                 <div class="sns_container"><div class="g-plusone" data-size="medium" data-href="http://regexgo.pe.hu/"></div></div>
                             </div>
                             <div class="clearfix"></div>
