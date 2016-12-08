@@ -37,7 +37,7 @@ class CurrentLanguage
 		,'not word, digit, whitespace' => 'not word, digit, whitespace'
 		,'any of a, b, or c' => 'any of a, b, or c'
 		,'not a, b, or c' => 'not a, b, or c'
-		,'character between a & G (a, b, .., z, A, B, .., G)' => 'character between a & G (a, b, .., z, A, B, .., G)'
+		,'character between A & g (A, B, .., Z, a, b, .., g)' => 'character between A & g (A, B, .., Z, a, b, .., g)'
 		,'Anchors' => 'Anchors'
 		,'start / end of the string' => 'start / end of the string'
 		,'word boundary' => 'word boundary'
@@ -85,5 +85,10 @@ class CurrentLanguage
 		,'Matches any character that is not a whitespace character (spaces, tabs, line breaks).' => 'Matches any character that is not a whitespace character (spaces, tabs, line breaks).'
 		,'character set' => 'character set'
 		,'Match any character in the set.' => 'Match any character in the set.'
+		,'negated set' => 'negated set'
+		,'Match any character that is not in the set.' => 'Match any character that is not in the set.'
+		,'range' => 'range'
+		,'Matches a character in the range {{getChar(prev)}} to {{getChar(next)}} (char code {{prev.code}} to {{next.code}}).' => 'Matches a character in the range {{getChar(prev)}} to {{getChar(next)}} (char code {{prev.code}} to {{next.code}}).'
+		,'Range values reversed. Start char is greater than end char.' => 'Range values reversed. Start char is greater than end char.'
 	];
 }

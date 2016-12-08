@@ -37,7 +37,7 @@ class CurrentLanguage
 		,'not word, digit, whitespace' => 'アルファベット、数字、アンダースコア以外の1文字、番号以外　（[^0-9]と同じ）、空白以外1文字　（[^ \r\t\n\f\v] と同じ）'
 		,'any of a, b, or c' => 'a,b,c いずれかの1文字'
 		,'not a, b, or c' => 'a,b,c以外の1文字'
-		,'character between a & G (a, b, .., z, A, B, .., G)' => '「a」から「G」まで1文字'
+		,'character between A & g (A, B, .., Z, a, b, .., g)' => '「A」から「g」まで1文字'
 		,'Anchors' => 'アンカー'
 		,'start / end of the string' => '文字列の開始/終了'
 		,'word boundary' => '単語境界'
@@ -85,5 +85,10 @@ class CurrentLanguage
 		,'Matches any character that is not a whitespace character (spaces, tabs, line breaks).' => 'タブや改行など、空白類とされる文字以外。'
 		,'character set' => '文字セット'
 		,'Match any character in the set.' => 'セット内の任意の文字にマッチします。'
+		,'negated set' => 'ネゲートセット'
+		,'Match any character that is not in the set.' => 'セット内以外の文字。'
+		,'range' => '範囲'
+		,'Matches a character in the range {{getChar(prev)}} to {{getChar(next)}} (char code {{prev.code}} to {{next.code}}).' => '{{getChar(prev)}}〜{{getChar(next)}}（charコード {{prev.code}}〜{{next.code}}）の1文字をマッチします。'
+		,'Range values reversed. Start char is greater than end char.' => '範囲の値が逆になりました。 開始文字は終了文字よりも大きい。'
 	];
 }

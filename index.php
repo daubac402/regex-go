@@ -204,8 +204,8 @@
                                         <td><?= __('not a, b, or c') ?></td>
                                     </tr>
                                     <tr>
-                                        <td>[a-G]</td>
-                                        <td><?= __('character between a & G (a, b, .., z, A, B, .., G)') ?></td>
+                                        <td>[A-g]</td>
+                                        <td><?= __('character between A & g (A, B, .., Z, a, b, .., g)') ?></td>
                                     </tr>
                                     <tr>
                                         <th colspan="2" class="button" data-icon="&#xf03a;"><?= __('Anchors') ?></th>
