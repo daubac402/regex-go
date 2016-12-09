@@ -51,7 +51,7 @@
     <body>
         <script>!function(a,b,c,d,e,f,g){a.GoogleAnalyticsObject=e,a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},a[e].l=1*new Date,f=b.createElement(c),g=b.getElementsByTagName(c)[0],f.async=1,f.src=d,g.parentNode.insertBefore(f,g)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-19534192-7","auto"),ga("send","pageview");</script>
         <div id="fb-root"></div>
-        <script>!function(a,b,c){var d,e=a.getElementsByTagName(b)[0];a.getElementById(c)||(d=a.createElement(b),d.id=c,d.src="//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=330208494007688",e.parentNode.insertBefore(d,e))}(document,"script","facebook-jssdk");</script>
+        <script>!function(a,b,c){var d,e=a.getElementsByTagName(b)[0];a.getElementById(c)||(d=a.createElement(b),d.id=c,d.src="//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1153989981317449",e.parentNode.insertBefore(d,e))}(document,"script","facebook-jssdk");</script>
         <div id="main" class="container-fluid sidebar-show" style="overflow:visible;">
             <div class="row">
                 <div id="sidebar-left" class="col-xs-2 col-sm-2" style="max-width:350px;max-height:294px;">
@@ -313,6 +313,7 @@
                                     </tr>
                                 </table>
                             </div>
+                            <div class="fb-comments" data-href="http://regexgo.pe.hu/" data-width="100%" data-numposts="5"></div>
                         </div>
                         </div>
                         <div class="not-supported hidden">
