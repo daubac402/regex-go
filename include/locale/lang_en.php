@@ -41,6 +41,9 @@ class CurrentLanguage
 		,'Anchors' => 'Anchors'
 		,'start / end of the string' => 'start / end of the string'
 		,'word boundary' => 'word boundary'
+		,'Matches a word boundary position such as whitespace, punctuation, or the start/end of the string.' => 'Matches a word boundary position such as whitespace, punctuation, or the start/end of the string.'
+		,'not word boundary' => 'not word boundary'
+		,'Matches any position that is not a word boundary.' => 'Matches any position that is not a word boundary.'
 		,'Escaped characters' => 'Escaped characters'
 		,'escaped . * \ ' => 'escaped . * \ '
 		,'tab, linefeed, carriage return' => 'tab, linefeed, carriage return'
@@ -90,5 +93,18 @@ class CurrentLanguage
 		,'range' => 'range'
 		,'Matches a character in the range {{getChar(prev)}} to {{getChar(next)}} (char code {{prev.code}} to {{next.code}}).' => 'Matches a character in the range {{getChar(prev)}} to {{getChar(next)}} (char code {{prev.code}} to {{next.code}}).'
 		,'Range values reversed. Start char is greater than end char.' => 'Range values reversed. Start char is greater than end char.'
+		,'Escaped character.' => 'Escaped character.'
+		,'TAB' => 'TAB'
+		,'LINE FEED' => 'LINE FEED'
+		,'CARRIAGE RETURN' => 'CARRIAGE RETURN'
+		,'unicode escape' => 'unicode escape'
+		,'Unicode escaped character in the form <code>\\uFFFF</code>.' => 'Unicode escaped character in the form <code>\\\\uFFFF</code>.'
+		,'capturing group' => 'capturing group'
+		,'Groups multiple tokens together and creates a capture group for extracting a substring or using a backreference.' => 'Groups multiple tokens together and creates a capture group for extracting a substring or using a backreference.'
+		,'control character escape' => 'control　character escape'
+		,'Escaped control character in the form <code>\\cZ</code>.' => 'Escaped control character in the form <code>\\\\cZ</code>.'
+		,'FORM FEED' => 'FORM FEED'
+		,'VERTICAL TAB' => 'VERTICAL TAB'
+		
 	];
 }

@@ -21,6 +21,7 @@
         <meta name="description" content="Test your Javascript Regular Expressions online.">
         <meta name="keywords" content="RegexGo, regex101, regex test,regex tester, regular expression, regex editor,online,regular,expression,tester,regexp,test,regex,validator, PCRE, PHP, Perl, javascript, 正規表現, Biểu Thức Chính Quy, 繰り返し, 欲張り, 文字クラス, 選択, テスト, アンカー, キャプチャ, 後方参照">
         <meta name="author" content="daubac403@gmail.com">
+        <meta property="fb:app_id" content="1153989981317449" />
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
         <link href="css/font-awesome.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
@@ -54,13 +55,16 @@
         <script>!function(a,b,c){var d,e=a.getElementsByTagName(b)[0];a.getElementById(c)||(d=a.createElement(b),d.id=c,d.src="//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1153989981317449",e.parentNode.insertBefore(d,e))}(document,"script","facebook-jssdk");</script>
         <div id="main" class="container-fluid sidebar-show" style="overflow:visible;">
             <div class="row">
-                <div id="sidebar-left" class="col-xs-2 col-sm-2" style="max-width:350px;max-height:294px;">
-                    &nbsp;
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8395820335361202" data-ad-slot="2521908577" data-ad-format="auto"></ins>
-                    <script>$(document).ready(function(){(adsbygoogle=window.adsbygoogle||[]).push({})});</script>
+                <div id="sidebar-left" class="col-xs-2 col-sm-2" style="max-width:350px;">
+                    <div>
+                        <p>With <a href="http://www.adsoptimal.com/?ss=ref49985"><img src="//cdn.adsoptimal.com/assets/logo.png" border="0" width="100"></a></p>
+                        <a href="http://www.adsoptimal.com/?ss=ref49985"><img src="//s3-us-west-1.amazonaws.com/mobile-monetizer-production-assets/flat-banner.jpg" style="max-width:100%"></a>
+                    </div>
                 </div>
-                <div id="content" class="col-xs-12 col-sm-10" style="min-height:1000px;padding-left:0px;padding-right:0px;">
+                <div id="content" class="col-xs-12 col-sm-10" style="min-height:1000px;padding:0">
+                    <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+                    <!-- <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-8395820335361202" data-ad-slot="9223283374"></ins> -->
+                    <!-- <script>$(document).ready(function(){(adsbygoogle=window.adsbygoogle||[]).push({})});</script> -->
                     <div style="display:none;">
                         <div class="lib hidden" id="libview">
                             <div class="content"></div>
@@ -215,8 +219,12 @@
                                         <td><?= __('start / end of the string') ?></td>
                                     </tr>
                                     <tr>
-                                        <td>\b</td>
+                                        <td><b>\b</b>hello<b>\b</b></td>
                                         <td><?= __('word boundary') ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>\B</b>hello<b>\B</b></td>
+                                        <td><?= __('not word boundary') ?></td>
                                     </tr>
                                     <tr>
                                         <th colspan="2" class="button" data-icon="&#xf03a;"><?= __('Escaped characters') ?></th>
@@ -232,6 +240,10 @@
                                     <tr>
                                         <td>\u00A9</td>
                                         <td><?= __('unicode escaped') ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td>\cA</td>
+                                        <td><?= __('control character escape') ?> (Ctrl+A)</td>
                                     </tr>
                                     <tr>
                                         <th colspan="2" class="button" data-icon="&#xf03a;"><?= __('Groups & Lookaround') ?></th>

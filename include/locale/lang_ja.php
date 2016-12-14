@@ -41,6 +41,9 @@ class CurrentLanguage
 		,'Anchors' => 'アンカー'
 		,'start / end of the string' => '文字列の開始/終了'
 		,'word boundary' => '単語境界'
+		,'Matches a word boundary position such as whitespace, punctuation, or the start/end of the string.' => '空白、句読点、または文字列の開始/終了などの単語境界位置に一致します。'
+		,'not word boundary' => '単語境界以外'
+		,'Matches any position that is not a word boundary.' => '単語の境界ではない任意の位置に一致します。'
 		,'Escaped characters' => 'エスケープ文字'
 		,'escaped . * \ ' => '. * \ をエスケープします'
 		,'tab, linefeed, carriage return' => 'タブ、改行、復帰'
@@ -90,5 +93,18 @@ class CurrentLanguage
 		,'range' => '範囲'
 		,'Matches a character in the range {{getChar(prev)}} to {{getChar(next)}} (char code {{prev.code}} to {{next.code}}).' => '{{getChar(prev)}}〜{{getChar(next)}}（charコード {{prev.code}}〜{{next.code}}）の1文字をマッチします。'
 		,'Range values reversed. Start char is greater than end char.' => '範囲の値が逆になりました。 開始文字は終了文字よりも大きい。'
+		,'Escaped character.' => 'エスケープ.'
+		,'TAB' => 'タブ'
+		,'LINE FEED' => '改行（LF）'
+		,'CARRIAGE RETURN' => '復帰（CR）'
+		,'unicode escape' => 'unicode escape'
+		,'Unicode escaped character in the form <code>\\uFFFF</code>.' => '<code>\\\\uFFFF</code>からユニコードエスケープします。'
+		,'capturing group' => 'グループ'
+		,'Groups multiple tokens together and creates a capture group for extracting a substring or using a backreference.' => '複数のトークンをグループ化し、部分文字列を抽出するか、逆参照を使用するための取得グループを作成します。'
+		,'control character escape' => '制御文字'
+		,'Escaped control character in the form <code>\\cZ</code>.' => '制御文字（<code>\\\\cZ</code>）をエスケープします。'
+		,'FORM FEED' => 'フォームフィード'
+		,'VERTICAL TAB' => '垂直タブ'
+		
 	];
 }
