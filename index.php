@@ -12,10 +12,9 @@
 ?>
 
     <head>
-        <meta charset="utf-8">
-        <title>RegexGO - Regex Tester - Javascript </title>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <meta charset="UTF-8">
+        <title>RegexGO - Regex Tester - Javascript</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Test your Javascript Regular Expressions online.">
@@ -238,12 +237,24 @@
                                         <td><?= __('tab, linefeed, carriage return') ?></td>
                                     </tr>
                                     <tr>
+                                        <td>\f \v</td>
+                                        <td><?= __('form feed') ?><?= __(', ') ?><?= __('vertical tab') ?></td>
+                                    </tr>
+                                    <tr>
                                         <td>\u00A9</td>
                                         <td><?= __('unicode escaped') ?></td>
                                     </tr>
                                     <tr>
                                         <td>\cA</td>
                                         <td><?= __('control character escape') ?> (Ctrl+A)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>\234</td>
+                                        <td><?= __('octal escape') ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td>\xEE</td>
+                                        <td><?= __('hexadecimal escape') ?></td>
                                     </tr>
                                     <tr>
                                         <th colspan="2" class="button" data-icon="&#xf03a;"><?= __('Groups & Lookaround') ?></th>
