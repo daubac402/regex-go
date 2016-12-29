@@ -12,9 +12,13 @@
 ?>
 
     <head>
-        <meta charset="UTF-8">
-        <title>RegexGO - Regex Tester - Javascript</title>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>RegexGO - Regex Tester - Javascript</title>
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="RegexGO - Regex Tester - Javascript">
+        <meta name="twitter:site" content="@daubac402">
+        <meta name="twitter:app:country" content="jp">
+        <meta property="og:description" content="Test your Javascript Regular Expressions online." />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Test your Javascript Regular Expressions online.">
