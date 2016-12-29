@@ -337,6 +337,7 @@
                                 </table>
                             </div>
                             <div class="fb-comments" data-href="http://regexgo.pe.hu/" data-width="100%" data-numposts="5"></div>
+                            <a href="http://info.flagcounter.com/jUZf"><img src="http://s10.flagcounter.com/count2/jUZf/bg_FFFFFF/txt_000000/border_CCCCCC/columns_3/maxflags_12/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
                         </div>
                         </div>
                         <div class="not-supported hidden">
