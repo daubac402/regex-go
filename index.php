@@ -59,10 +59,7 @@
         <div id="main" class="container-fluid sidebar-show" style="overflow:visible;">
             <div class="row">
                 <div id="sidebar-left" class="col-xs-2 col-sm-2" style="max-width:350px;">
-                    <!-- <div>
-                        <p>With <a href="http://www.adsoptimal.com/?ss=ref49985"><img src="//cdn.adsoptimal.com/assets/logo.png" border="0" width="100"></a></p>
-                        <a href="http://www.adsoptimal.com/?ss=ref49985"><img src="//s3-us-west-1.amazonaws.com/mobile-monetizer-production-assets/flat-banner.jpg" style="max-width:100%"></a>
-                    </div> -->
+                    <div class="fb-comments" data-href="http://regexgo.toancaro.com/" data-width="100%" data-numposts="5"></div>
                 </div>
                 <div id="content" class="col-xs-12 col-sm-10" style="min-height:1000px;padding:0">
                     <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
@@ -340,7 +337,6 @@
                                     </tr>
                                 </table>
                             </div>
-                            <div class="fb-comments" data-href="http://regexgo.toancaro.com/" data-width="100%" data-numposts="5"></div>
                             <a href="http://info.flagcounter.com/jUZf"><img src="http://s10.flagcounter.com/count2/jUZf/bg_FFFFFF/txt_000000/border_CCCCCC/columns_3/maxflags_12/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
                         </div>
                         </div>
